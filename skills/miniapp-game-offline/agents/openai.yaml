@@ -1,0 +1,4 @@
+interface:
+  display_name: "小程序游戏离线移植"
+  short_description: "从小程序链接核对原版构建，整理本地资源并交付可玩 Windows 包或 Android APK"
+  default_prompt: "使用 $miniapp-game-offline 根据这个小程序链接核对原版构建，并打包成可离线游玩的版本。"
