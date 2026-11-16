@@ -10,6 +10,18 @@
 
 可以附上录屏或已有构建，用来核对版本和实际界面。
 
+## 在 DeepSeek Harness 中使用
+
+安装 GitHub Release 提供的 DSH 插件。将 `desktop` 换成自己的 DSH profile 名称：
+
+```powershell
+dsh plugin --profile desktop add https://github.com/linglanxin/miniapp-game-offline/releases/download/v1.0.0/dsh-miniapp-game-offline-1.0.0.tgz
+```
+
+重载 profile 后，在会话中说「加载 miniapp-game-offline 技能，根据这个小程序链接分析离线移植方案」，并附上链接。插件向 DSH 的技能目录注册指令和随包资源。构建和打包由当前任务使用相应工具执行。
+
+支持 DSH 0.2.2 系列，从 0.2.2-rc.1 起。验证时使用本机的 DSH 0.2.2-rc.1。
+
 ## 工具和资料
 
 - [资源清单工具](skills/miniapp-game-offline/scripts/mirror-manifest.py) 对目录和 ZIP/APK 内文件执行 SHA-256 比对，支持明确列出预期变动。

@@ -1,0 +1,37 @@
+{
+  "name": "dsh-miniapp-game-offline",
+  "version": "1.0.0",
+  "description": "Registers a DSH skill for identifying, verifying and packaging offline miniapp game builds.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skills/miniapp-game-offline"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-skill",
+    "miniapp",
+    "unity-webgl"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linglanxin/miniapp-game-offline.git"
+  },
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": ">=0.2.2-rc.1 <0.2.3-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
